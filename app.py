@@ -2,22 +2,22 @@ import pickle
 import pandas as pd
 import streamlit as st
 
-from PIL import Image
+#from PIL import Image
 
 #pickle_in = open("classifier.pkl","rb")
 #classifier=pickle.load(pickle_in)
 
 def main():
     # Create a page dropdown
-    '''image = Image.open('hsv.jpg')
-    st.sidebar.image(image,width=100)
+    #image = Image.open('hsv.jpg')
+    #st.sidebar.image(image,width=100)
     st.sidebar.title("Guvi_Insurance")
-    col1, col2 = st.columns( [0.5, 0.5])
+    '''col1, col2 = st.columns( [0.5, 0.5])
     with col1:
         st.title("Guvi_Insurance")   
     with col2:
         st.image(image,  width=150)
-    page = st.sidebar.selectbox("Select One", ['ABOUT',"PREDICTION"])
+    page = st.sidebar.selectbox("Select One", ['ABOUT',"PREDICTION"])'''
     if page == "ABOUT":
         st.title('Welcome to Guvi_Insurance')
         st.subheader('.')
@@ -26,7 +26,7 @@ def main():
         st.write('**Creators:** Kaviarasan K G')
         st.write('**Creators:** Ashwin')
 
-    if page == "PREDICTION":
+    '''if page == "PREDICTION":
         st.title('PREDICTION')
         age = st.slider("select the age of the person",int(data.age.min()),int(data.age.max()))
         job = st.selectbox("Select the occupation ",data.job.unique())
