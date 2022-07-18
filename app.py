@@ -4,12 +4,12 @@ import streamlit as st
 
 from PIL import Image
 
-pickle_in = open("classifier.pkl","rb")
-classifier=pickle.load(pickle_in)
+#pickle_in = open("classifier.pkl","rb")
+#classifier=pickle.load(pickle_in)
 
 def main():
     # Create a page dropdown
-    image = Image.open('hsv.jpg')
+    '''image = Image.open('hsv.jpg')
     st.sidebar.image(image,width=100)
     st.sidebar.title("Guvi_Insurance")
     col1, col2 = st.columns( [0.5, 0.5])
@@ -135,7 +135,7 @@ def main():
                 st.write('DECLINED')
             else:
                 st.write('DECLINED')
-                st.snow()
+                st.snow()'''
 
         if st.button("About"):
         st.text("Lets LEarn")
