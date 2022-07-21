@@ -124,7 +124,7 @@ def main():
         else:
             prev_outcome_success=0
 
-        input = pd.DataFrame([age,job,education_qual,call_type, day, mon, dur,num_calls, marital_divorced,marital_married,marital_single,prev_outcome_failure,prev_outcome_other,prev_outcome_success,prev_outcome_unknown],columns=['age', 'job', 'education_qual', 'call_type', 'day', 'mon', 'dur','num_calls', 'marital_divorced', 'marital_married','marital_single', 'prev_outcome_failure', 'prev_outcome_other','prev_outcome_success', 'prev_outcome_unknown'],index=['index'])
+        input = pd.DataFrame([age,job,education_qual,call_type, day, mon, dur,num_calls, marital_divorced,marital_married,marital_single,prev_outcome_failure,prev_outcome_other,prev_outcome_success,prev_outcome_unknown])
 
 
         if st.button("Predict"):
