@@ -136,9 +136,9 @@ def main():
                 st.snow()
 
         
-        if st.button("About"):
+        '''if st.button("About"):
             st.text("Lets Learn")
-            st.text("Built with Streamlit")
+            st.text("Built with Streamlit")'''
 
 if __name__=='__main__':
     main()
